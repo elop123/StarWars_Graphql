@@ -87,7 +87,7 @@ export const Home =()=>{
                             className={s.imageStyle}
                             src={filmImage.src}
                             alt={film.title}
-                            style={{ width: '340px', height: '450px', margin: '1rem' }}
+                            style={{ width: '340px', height: '400px'  }}
                             //Open the modal
                             onClick={() => openModal(film)}
                         />

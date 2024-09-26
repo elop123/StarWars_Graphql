@@ -2,15 +2,15 @@ nav::after {
   content: '';
   position: absolute;
   bottom: 0;
-  top: 4.3rem;
+  top: 3.5rem;
   width: 100%;
   height: 4px;
-  //background: violet;
-  //box-shadow: 0px 0px 10px 2px violet;
-  //animation: shadowMove 4s linear infinite; /* Infinite animation */
+  background: violet;
+  box-shadow: 0px 0px 10px 2px violet;
+  animation: shadowMove 4s linear infinite; 
 }
 
-/* Define the shadow movement keyframe animation */
+
 @keyframes shadowMove {
   0% {
       transform: translateX(-100%);
@@ -24,9 +24,13 @@ nav {
     padding: 10px;
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    align-items: center;
+   
     gap:3rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
   }
   
   nav a {
@@ -40,4 +44,8 @@ nav {
    
   }
   
-  /* Add shadow animation */
+  @media (max-width:700px){
+    nav{
+      width: 100%;
+    }
+  }

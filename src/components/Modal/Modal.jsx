@@ -11,14 +11,15 @@ const Modal = ({ isOpen, onClose, film }) => {
        };
 
     return (
-        <modal className={s.overlayStyle}>
+        <section className={s.overlayStyle}>
             <div className={s.modalStyle}>
             <button style={{backgroundColor:'violet', borderRadius:'8px', cursor:'pointer'}} onClick={onClose}>Close</button>
-              <h2 style={{color:'beige', textAlign:'center', fontSize:'2rem'}} className={s.h2Style}>Details about the movie:</h2>
-              <h3 style={{color:'violet',  textAlign:'center', fontSize:'1.5rem', textDecoration:'underline'}}>{film.title}</h3>
+              <h2 style={{color:'beige', textAlign:'center', fontSize:'2rem', marginTop:'0.5rem'}} className={s.h2Style}>Details about the movie:</h2>
+              <h3 style={{color:'violet',  textAlign:'center', fontSize:'1.5rem',marginTop:'1rem', textDecoration:'underline'}}>{film.title}</h3>
               <p style={{color:'beige',  textAlign:'center', fontFamily:'Roboto'}}><strong>Release Date:</strong> {film.releaseDate}</p>
               <p style={{color:'beige',  textAlign:'center', fontFamily:'Roboto'}}><strong>Director:</strong> {film.director}</p>
-              <p style={{color:'beige', width:'70%', margin:'auto ', fontFamily:'Roboto'}}>Summary:Star Wars: A New Hope (1977) is the first film in the original Star Wars 
+              <p style={{color:'beige', width:'75%', height:'200px', marginBottom:'1rem',
+                margin:'auto ', fontFamily:'Roboto'}}>Summary:Star Wars: A New Hope (1977) is the first film in the original Star Wars 
             trilogy and the movie that launched the iconic space saga. Set in a galaxy far, 
             far away, the story follows a young farm boy, Luke Skywalker, who dreams of adventure. 
             When he discovers a distress message hidden in a droid, he joins forces with Princess 
@@ -35,7 +36,7 @@ const Modal = ({ isOpen, onClose, film }) => {
         
                 
         </div>
-        </modal>
+        </section>
     );
 };
 

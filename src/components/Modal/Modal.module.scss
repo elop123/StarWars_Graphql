@@ -1,6 +1,6 @@
 .overlayStyle {
     position: fixed;
-    top: 6rem;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -8,16 +8,17 @@
     display: flex;
     justify-content: center;
     align-items: 'center';
-    width: 1000px;
-    height: 500px;
+    width: 1060px;
+    height: 460px;
     margin:auto;
+    margin-left: 6rem;
     border-radius: 30px;
     box-shadow: 4px 8px 8px 4px  #872e55;
     .modalStyles {
         background: #fff;
         padding: 20px;
         border-radius: 5px;
-        width: 200px;
+        width: 220px;
         height: 300px;
         .buttonStyle{
             background-color: violet;
@@ -27,3 +28,26 @@
       }
   }
   
+@media(max-width:700px){
+.overlayStyle{
+   top:1rem;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    margin-left: 2rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+   
+}
+.h2Style{
+    font-size: 1.5rem;
+}
+.h3{
+    font-size: 1rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+
+}

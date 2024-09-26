@@ -1,5 +1,6 @@
 .mainStyle{
     margin-bottom: 2rem;
+    width: 100%;
     h2{
         color: darkviolet;
         text-align: center;
@@ -18,8 +19,30 @@
     li{
         color: whitesmoke;
         line-height: 2rem;
-       
+       width: 94%;
        
     }
     
+}
+
+@media(max-width:700px){
+    .mainStyle{
+        width: 88%;
+        margin: auto;
+     h2{
+        margin-left: -2rem;
+        margin-right: 2rem;
+     }
+        h3{
+           width: 90%;
+           //margin-left: 0.5rem;
+           font-size: smaller;
+        }
+        li{
+            width: 89%;
+            font-size: smaller;
+           //margin-right: 2rem;
+           
+        }
+    }
 }

@@ -11,7 +11,6 @@ export const Navbar =()=>{
      {navLinks.map((item, index)=>{
         return(<>
             <NavLink  to={item.link} key={index}>{item.title}</NavLink>
-            
             </>
         )
      })}

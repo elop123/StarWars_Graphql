@@ -2,10 +2,12 @@
 .filmList{
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-content: center;
-    margin-left: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    //margin-left: 4rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 4.5rem;
    
     .titleStyle{
        //text-align: center;
@@ -13,6 +15,9 @@
        top: 25%;
        left: 25%;
        transform: translate(22%, -15%);
+       margin-bottom: 2.5rem;
+      margin-top: 2rem;
+      margin-left: -3rem;
        
     }
    img{
@@ -31,4 +36,29 @@
    font-family: 'Monoton';
    font-size: 3rem;
    text-shadow: 2px 2px 2px 4px violet;
+   width: 100%;
+}
+
+@media(max-width:700px){
+  
+   .h1Style{
+      font-size: 1.6rem;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: 0.6rem;
+      
+   }
+   .filmList{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      margin-left: 2rem;
+      .titleStyle{
+         margin: auto;
+         margin-top: 2rem;
+         margin-bottom: 3rem;
+         margin-left: 0.1rem;
+      }
+   }
 }

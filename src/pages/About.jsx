@@ -1,9 +1,11 @@
 import React from "react"
 import s from '../style/About.module.scss'
+import Sortering from "../components/Sortering/Sortering"
 
 export const About =()=>{
     return(
     <main className={s.mainStyle}>
+        
      <h2>Welcome to the Star Wars Codex</h2>
      <p>The Star Wars Codex is your ultimate gateway into the galaxy far, far away. 
         Whether you are a longtime fan or a newcomer, this application serves as a

@@ -3,7 +3,7 @@ import './App.css'
 import {MainLayout} from './layout/MainLayout'
 import {Home} from './pages/Home'
 import {About} from './pages/About'
-import {Search} from './pages/Search'
+import {Character} from './pages/Character'
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<MainLayout/>}>
          <Route index element={<Home/>}/>
          <Route path="/about" element={<About/>}/>
-         <Route path="/search/:filmID" element={<Search/>}/> 
+         <Route path="/character" element={<Character/>}/> 
         </Route>
       </Routes>
     </Router>
