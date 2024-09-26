@@ -6,7 +6,7 @@ export const navLinks= [
     link:"/about",
     title:"About"},
     {
-    link:"/character",
-    title:"Character"},
+    link:"/characters",
+    title:"Characters"},
 
 ]

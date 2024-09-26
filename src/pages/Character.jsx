@@ -37,12 +37,17 @@ export const Character = () => {
           <section className={s.infoStyle}>
           <ul>
           <li key={person.id} style={{listStyleType:'none'}}>
-            <p style={{width:'300px'}}><strong>Name:</strong> {person.name}</p>
+          <input type="checkbox" id={`accordion-${person.id}`} className={s.accordionToggle} />
+          <label htmlFor={`accordion-${person.id}`} className={s.accordionLabel}>
+            <p style={{width:'300px'}}><strong>Name:</strong> {person.name} <span>+</span> </p>
+          </label>
+          <div className={s.accordionContent}>
             <p><strong>Birth Year:</strong> {person.birthYear}</p>
             <p><strong>Eye Color:</strong> {person.eyeColor}</p>
             <p><strong>Gender:</strong> {person.gender}</p>
             <p><strong>Hair Color:</strong> {person.hairColor}</p>
             <p><strong>Height:</strong> {person.height}</p>
+          </div>
           </li>
           </ul>
           </section>

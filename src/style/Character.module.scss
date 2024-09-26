@@ -12,17 +12,45 @@
         margin-bottom: 20px;
         font-size: 24px;
         color: violet;
+        overflow: hidden; 
     }
     .infoStyle{
         margin-top: 5rem;
         width: 350px;
-        height: 300px;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         border: 2px solid violet;
         box-shadow: 2px 2px 4px 8px darkviolet;
         border-radius: 10px;
+        &:hover{
+        box-shadow: 4px 4px 6px 10px darkviolet;
+        }
+        
+       
     }
+    .accordionLabel {
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        color: darkviolet;
+        margin-bottom: 1rem;
+       
+      }
+      .accordionToggle {
+        display: none;
+      }
+      
+      .accordionContent {
+        max-height: 0;
+        overflow: hidden;
+       
+      }
+      
+      .accordionToggle:checked + .accordionLabel + .accordionContent {
+        max-height: 300px; 
+      }
+    
 }
 
 
