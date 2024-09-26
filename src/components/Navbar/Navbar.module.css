@@ -5,9 +5,9 @@ nav::after {
   top: 3.5rem;
   width: 100%;
   height: 4px;
-  background: violet;
-  box-shadow: 0px 0px 10px 2px violet;
-  animation: shadowMove 4s linear infinite; 
+  //background: violet;
+  //box-shadow: 0px 0px 10px 2px violet;
+  //animation: shadowMove 4s linear infinite; 
 }
 
 

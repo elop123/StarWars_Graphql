@@ -1,0 +1,39 @@
+.sectionStyle{
+   
+    padding: 20px;
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+      }
+    .titleStyle{
+        margin-top: 1rem;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: violet;
+    }
+    .infoStyle{
+        margin-top: 5rem;
+        width: 350px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid violet;
+        box-shadow: 2px 2px 4px 8px darkviolet;
+        border-radius: 10px;
+    }
+}
+
+
+@media(max-width:700px){
+    .sectionStyle{
+        .cardContainer {
+            display: grid;
+            grid-template-columns:1fr; 
+           margin: auto;
+           margin-left: 3rem;
+          }
+    }
+  
+}
