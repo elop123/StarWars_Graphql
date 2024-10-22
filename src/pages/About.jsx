@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet"
 export const About =()=>{
     return(
         <div>
+           <head>
     <Helmet>
         <title>About</title>
         <meta name="description" content="Discover about the Star Wars. " />
@@ -25,6 +26,7 @@ export const About =()=>{
         <meta name="twitter:description" content="Discover more about Star Wars characters"/>
         <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/506f3521-4a2a-47de-90d5-b78e308d1135.jpg?token=pQOzsXaFza1qIQDqsCTkV0TrgvVcgVsJl60Ow-4h7NI&height=542&width=375&expires=33265598965"/>
     </Helmet>
+    </head>
          <main className={s.mainStyle}>
         
         <h2>Welcome to the Star Wars Codex</h2>
