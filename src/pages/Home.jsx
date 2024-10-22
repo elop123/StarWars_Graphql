@@ -85,7 +85,7 @@ export const Home =()=>{
         <meta property="og:title" content=" Star Wars" />
         <meta property="og:description" content="Learn more about Star Wars and characters" />
         <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/506f3521-4a2a-47de-90d5-b78e308d1135.jpg?token=pQOzsXaFza1qIQDqsCTkV0TrgvVcgVsJl60Ow-4h7NI&height=542&width=375&expires=33265598965" />
-        <meta property="og:url" content="https://starwars.com" />
+        <meta property="og:url" content="https://starwars2024.netlify.app/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image"/>
@@ -95,7 +95,7 @@ export const Home =()=>{
         <meta name="twitter:description" content="Discover more about Star Wars characters"/>
         <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/506f3521-4a2a-47de-90d5-b78e308d1135.jpg?token=pQOzsXaFza1qIQDqsCTkV0TrgvVcgVsJl60Ow-4h7NI&height=542&width=375&expires=33265598965"/>
 
-      </Helmet>
+</Helmet>
 
         <h1 className={s.h1Style} style={{textShadow:'2px 2px 6px darkviolet'}}>STAR &nbsp; WARS  &nbsp; MOVIES:</h1>
         

@@ -38,11 +38,18 @@ export const Character = () => {
         <meta name="keywords" content="Star wars, characters, description " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content=" Ultimate Star Wars Character Guide" />
+        <meta property="og:title" content=" Star Wars Characters" />
         <meta property="og:description" content="Learn more about Star Wars and characters" />
-        <meta property="og:image" content="https://starwars.com/01.jpg" />
-        <meta property="og:url" content="https://starwars.com" />
+        <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/506f3521-4a2a-47de-90d5-b78e308d1135.jpg?token=pQOzsXaFza1qIQDqsCTkV0TrgvVcgVsJl60Ow-4h7NI&height=542&width=375&expires=33265598965" />
+        <meta property="og:url" content="https://starwars2024.netlify.app/" />
         <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="starwars2024.netlify.app"/>
+        <meta property="twitter:url" content="https://starwars2024.netlify.app/"/>
+        <meta name="twitter:title" content="Star Wars"/>
+        <meta name="twitter:description" content="Discover more about Star Wars characters"/>
+        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/506f3521-4a2a-47de-90d5-b78e308d1135.jpg?token=pQOzsXaFza1qIQDqsCTkV0TrgvVcgVsJl60Ow-4h7NI&height=542&width=375&expires=33265598965"/>
       </Helmet>
       </head>
       <h1 className={s.titleStyle}>All Characters from Star Wars:</h1>
