@@ -1,16 +1,51 @@
+nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 3.5rem;
+  width: 100%;
+  height: 4px;
+  background: violet;
+  box-shadow: 0px 0px 10px 2px violet;
+  animation: shadowMove 4s linear infinite; 
+}
 
+
+@keyframes shadowMove {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
 nav {
     background-color: #3e051e;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: center;
+    align-items: center;
    
+    gap:3rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
   }
   
   nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
+
+    }
+  nav a:hover{
+    text-decoration: underline;
+   
   }
   
+  @media (max-width:700px){
+    nav{
+      width: 100%;
+    }
+  }
