@@ -19,7 +19,7 @@ nav::after {
       transform: translateX(100%);
   }
 }
-nav {
+.navStyle {
     background-color: #3e051e;
     padding: 10px;
     display: flex;
@@ -33,19 +33,19 @@ nav {
     overflow-x: hidden;
   }
   
-  nav a {
+  .navStyle a {
     color: white;
     text-decoration: none;
     padding: 10px;
 
     }
-  nav a:hover{
+  .navStyle a:hover{
     text-decoration: underline;
    
   }
   
   @media (max-width:700px){
-    nav{
+    .navStyle{
       width: 100%;
     }
   }
