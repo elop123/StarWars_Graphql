@@ -11,6 +11,7 @@ import img5 from '../assets/images/05.jpg'
 import img6 from '../assets/images/06.jpg'
 import Modal from "../components/Modal/Modal"
 import s from '../style/Home.module.scss'
+import { Helmet } from "react-helmet";
 
 
 
@@ -75,6 +76,19 @@ export const Home =()=>{
 };
     return(
      <div>
+    <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Discover the Star Wars origin." />
+        <meta name="keywords" content="Star wars, movies, characters, episodes " />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content=" Star Wars" />
+        <meta property="og:description" content="Learn more about Star Wars and characters" />
+        <meta property="og:image" content="https://starwars.com/01.jpg" />
+        <meta property="og:url" content="https://starwars.com" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
         <h1 className={s.h1Style} style={{textShadow:'2px 2px 6px darkviolet'}}>STAR &nbsp; WARS  &nbsp; MOVIES:</h1>
         
             <ul className={s.filmList}>

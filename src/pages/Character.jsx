@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { allCharacters } from "../queries/allCharacters";
 import { Link } from "react-router-dom";
 import s from '../style/Character.module.scss'
+import { Helmet } from "react-helmet"
 
 
 export const Character = () => {
@@ -30,6 +31,20 @@ export const Character = () => {
 
   return (
     <section className={s.sectionStyle}>
+      <head>
+      <Helmet>
+        <title>Characters</title>
+        <meta name="description" content="Discover the Star Wars characters: name, height" />
+        <meta name="keywords" content="Star wars, characters, description " />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content=" Ultimate Star Wars Character Guide" />
+        <meta property="og:description" content="Learn more about Star Wars and characters" />
+        <meta property="og:image" content="https://starwars.com/01.jpg" />
+        <meta property="og:url" content="https://starwars.com" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      </head>
       <h1 className={s.titleStyle}>All Characters from Star Wars:</h1>
       <div className={s.cardContainer}>
       {data.allPeople.people.length > 0 ? (
