@@ -31,7 +31,7 @@ export const Character = () => {
 
   return (
     <section className={s.sectionStyle}>
-      <head>
+      <div>
       <Helmet>
         <title>Characters</title>
         <meta name="description" content="Discover the Star Wars characters: name, height" />
@@ -51,7 +51,7 @@ export const Character = () => {
         <meta name="twitter:description" content="Discover more about Star Wars characters"/>
         <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/506f3521-4a2a-47de-90d5-b78e308d1135.jpg?token=pQOzsXaFza1qIQDqsCTkV0TrgvVcgVsJl60Ow-4h7NI&height=542&width=375&expires=33265598965"/>
       </Helmet>
-      </head>
+      </div>
       <h1 className={s.titleStyle}>All Characters from Star Wars:</h1>
       <div className={s.cardContainer}>
       {data.allPeople.people.length > 0 ? (
