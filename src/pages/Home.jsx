@@ -11,7 +11,7 @@ import img5 from '../assets/images/05.jpg'
 import img6 from '../assets/images/06.jpg'
 import Modal from "../components/Modal/Modal"
 import s from '../style/Home.module.scss'
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async"
 
 
 
@@ -78,7 +78,7 @@ export const Home =()=>{
      <div>
 <Helmet>
         <title>Home</title>
-        <meta name="description" content="Discover the Star Wars origin." />
+        <meta name="description" content="Discover the Star Wars origin, movies, episodes." />
         <meta name="keywords" content="Star wars, movies, characters, episodes " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Open Graph Meta Tags */}

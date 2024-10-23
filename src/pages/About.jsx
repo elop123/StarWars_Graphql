@@ -1,7 +1,7 @@
 import React from "react"
 import s from '../style/About.module.scss'
 import Sortering from "../components/Sortering/Sortering"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 
 export const About =()=>{
     return(

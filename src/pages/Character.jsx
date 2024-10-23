@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { allCharacters } from "../queries/allCharacters";
 import { Link } from "react-router-dom";
 import s from '../style/Character.module.scss'
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 
 
 export const Character = () => {

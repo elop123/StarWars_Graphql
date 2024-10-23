@@ -5,6 +5,7 @@ import {Home} from './pages/Home'
 import {About} from './pages/About'
 import {Character} from './pages/Character'
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
+import { HelmetProvider } from "react-helmet-async"
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
  
 
   return (
-    <>
+    <HelmetProvider>
     <QueryClientProvider client={queryClient}>
     <Router>
       <Routes>
@@ -24,7 +25,7 @@ function App() {
       </Routes>
     </Router>
     </QueryClientProvider>
-    </>
+    </HelmetProvider>
   )
 }
 
